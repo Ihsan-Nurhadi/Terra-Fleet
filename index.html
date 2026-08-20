@@ -18,6 +18,10 @@
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/layout.css" />
 
+  <!-- Leaflet CSS & JS for Live GPS Fleet Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
   <!-- Lucide Icons & Chart.js -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -46,6 +50,10 @@
         <a href="#/dashboard" class="nav-item active" data-route="/dashboard">
           <i data-lucide="layout-dashboard"></i>
           <span>Dashboard</span>
+        </a>
+        <a href="#/map" class="nav-item" data-route="/map">
+          <i data-lucide="map-pinned"></i>
+          <span>Monitoring Map</span>
         </a>
         <a href="#/trips" class="nav-item" data-route="/trips">
           <i data-lucide="repeat"></i>

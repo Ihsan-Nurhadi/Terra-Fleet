@@ -34,9 +34,17 @@ Lalu buka browser di `http://localhost:3000` (atau `http://localhost:8000`).
 - **Doughnut Chart**: Distribusi volume per lokasi quarry/galian.
 - **Bar Chart**: Progres volume yang diterima per lokasi proyek penimbunan.
 - **Tabel Performa per Unit**: Progress bar persentase target dengan warna dinamis (Merah `<70%`, Kuning `70–99%`, Hijau `≥100%`).
+- **Live Fleet Tracker Banner**: Akses cepat status truk yang sedang melintas.
 - **Live Trip Stream**: Log aktivitas transaksi rit terbaru.
 
-### 2. 🚛 Modul Armada Dump Truck
+### 2. 🗺️ Modul Peta Armada (Live GPS Map Tracking)
+- **Peta Interaktif Layar Penuh** menggunakan Leaflet.js dengan basemap CartoDB (otomatis berganti tile pada Light/Dark mode).
+- **Pelacakan Posisi GPS Real-Time**: Marker truk bergerak dengan indikator kecepatan ($km/jam$), muatan volume, nama pengemudi, dan estimasi waktu tiba (ETA).
+- **Garis Rute (Polylines)**: Visualisasi lintasan dari lokasi quarry galian ke proyek tujuan.
+- **Panel Samping Kendali**: Daftar truk aktif dengan fitur klik untuk fokus (*fly to location*).
+- **Simulasi GPS Dinamis**: Tombol aktifasi simulasi pergerakan armada secara langsung.
+
+### 3. 🚛 Modul Armada Dump Truck
 - Tabel daftar armada lengkap dengan No. Unit, No. Polisi, Kapasitas bak (m³), Status unit dengan badge indikator warna, Driver bertugas (multi-driver shift), dan Jadwal servis.
 - Filter cepat status unit (Semua, Aktif, Idle, Maintenance) dan live search.
 - **Form Tambah & Edit Unit Truck** dengan simulasi penyimpanan in-memory.

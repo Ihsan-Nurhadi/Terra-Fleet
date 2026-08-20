@@ -1,6 +1,7 @@
 // router.js — Client-Side Hash Router & View Switcher
 
 import { renderDashboardView } from "./views/dashboard.js";
+import { renderLiveMapView } from "./views/map.js";
 import { renderTrucksView } from "./views/trucks.js";
 import { renderDriversView } from "./views/drivers.js";
 import { renderTripsView } from "./views/trips.js";
@@ -13,6 +14,7 @@ import { destroyAllCharts } from "./charts.js";
 const routes = {
   "/": { title: "Dashboard Monitoring", render: renderDashboardView },
   "/dashboard": { title: "Dashboard Monitoring", render: renderDashboardView },
+  "/map": { title: "Peta Armada (Live Map)", render: renderLiveMapView },
   "/trucks": { title: "Armada Dump Truck", render: renderTrucksView },
   "/drivers": { title: "Monitoring Driver", render: renderDriversView },
   "/trips": { title: "Data Pengiriman (Rit Log)", render: renderTripsView },

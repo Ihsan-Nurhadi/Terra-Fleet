@@ -102,6 +102,31 @@ export function renderDashboardView(container) {
       </div>
     </div>
 
+    <!-- Live Fleet GPS Quick Tracker Banner -->
+    <div class="card" style="margin-bottom: 24px; background: linear-gradient(135deg, var(--bg-elevated), var(--bg-secondary)); border-left: 4px solid var(--accent-primary);">
+      <div class="flex items-center justify-between flex-wrap gap-4">
+        <div class="flex items-center gap-4">
+          <div style="width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--accent-primary-subtle); color: var(--accent-primary); display: flex; align-items: center; justify-content: center;">
+            <i data-lucide="map-pinned" style="width: 22px; height: 22px;"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h4 class="font-bold text-primary" style="font-size: 15px;">Live GPS Fleet Tracking Map</h4>
+              <span class="badge badge-success" style="font-size: 11px;">
+                <span class="pulse-dot" style="width: 6px; height: 6px;"></span> 3 Unit Sedang Melintas
+              </span>
+            </div>
+            <p class="text-xs text-secondary" style="margin-top: 2px;">
+              Pantau rute DT-03, DT-04, dan DT-08 dari quarry ke lokasi proyek dengan estimasi waktu tiba (ETA) dan kecepatan aktual.
+            </p>
+          </div>
+        </div>
+        <a href="#/map" class="btn btn-primary btn-sm">
+          <i data-lucide="map" style="width: 14px; height: 14px;"></i> Buka Peta Interaktif &rarr;
+        </a>
+      </div>
+    </div>
+
     <!-- Charts Section -->
     <div class="grid grid-cols-3" style="margin-bottom: 24px;">
       <!-- Line Chart: Tren Pengiriman -->
