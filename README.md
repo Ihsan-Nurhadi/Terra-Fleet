@@ -1,4 +1,4 @@
-# TERRA FLEET — Sistem Monitoring Terintegrasi Aktivitas Pengangkutan Tanah (Dump Truck Fleet)
+# NAYAKA FLEET — Sistem Monitoring Terintegrasi Aktivitas Pengangkutan Tanah (Dump Truck Fleet)
 
 Aplikasi web mockup interaktif untuk sistem monitoring terintegrasi operasional pengangkutan tanah urug menggunakan armada dump truck. Sistem mencatat pengambilan tanah dari berbagai sumber (quarry), pengiriman ke berbagai proyek tujuan penimbunan, penugasan driver, histori timbangan/weighbridge, serta pencapaian target harian/periodik secara real-time.
 

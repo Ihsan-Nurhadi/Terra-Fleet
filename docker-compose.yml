@@ -3,11 +3,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: terra_fleet_monitoring
+    container_name: nayaka_fleet_monitoring
     restart: unless-stopped
     ports:
-      # Format: HOST_PORT:CONTAINER_PORT
-      # Ubah 8080 menjadi 80 jika ingin langsung diakses via port HTTP standar
-      - "3000"
+      # Map host VPS port 3000 to Nginx container port 80
+      - "3000:80"
     environment:
       - TZ=Asia/Jakarta
