@@ -1,0 +1,117 @@
+/* variables.css — Color tokens and theme system */
+
+:root {
+  /* Common metrics */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace;
+
+  --text-xs: 0.75rem;    /* 12px */
+  --text-sm: 0.8125rem;  /* 13px */
+  --text-base: 0.875rem; /* 14px */
+  --text-md: 1rem;       /* 16px */
+  --text-lg: 1.25rem;    /* 20px */
+  --text-xl: 1.75rem;    /* 28px */
+  --text-2xl: 2.25rem;   /* 36px */
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.35s ease;
+
+  --sidebar-width: 260px;
+  --sidebar-collapsed-width: 72px;
+  --topbar-height: 68px;
+}
+
+/* Light Mode */
+:root,
+:root[data-theme="light"] {
+  --bg-primary: #F7F8FA;
+  --bg-secondary: #FFFFFF;
+  --bg-elevated: #FFFFFF;
+  --bg-hover: #F1F3F6;
+  --border-color: #E4E7EB;
+  --border-subtle: #EDF0F4;
+  
+  --text-primary: #1A1D23;
+  --text-secondary: #5B6270;
+  --text-muted: #9AA1AC;
+
+  --accent-primary: #2563EB;   /* Biru operasional utama */
+  --accent-primary-hover: #1D4ED8;
+  --accent-primary-subtle: rgba(37, 99, 235, 0.08);
+  --accent-secondary: #0D9488; /* Teal aksen */
+
+  --status-success: #16A34A;   /* >= 100%, Aktif, Selesai */
+  --status-success-bg: #DCFCE7;
+  --status-success-border: #BBF7D0;
+
+  --status-warning: #D97706;   /* 70-99%, Dalam Perjalanan */
+  --status-warning-bg: #FEF3C7;
+  --status-warning-border: #FDE68A;
+
+  --status-danger: #DC2626;    /* < 70%, Maintenance, Dibatalkan */
+  --status-danger-bg: #FEE2E2;
+  --status-danger-border: #FECACA;
+
+  --status-neutral: #6B7280;   /* Idle, Dijadwalkan */
+  --status-neutral-bg: #F1F2F4;
+  --status-neutral-border: #E5E7EB;
+
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.05);
+  --shadow-md: 0 4px 12px rgba(16, 24, 40, 0.07);
+  --shadow-lg: 0 12px 28px rgba(16, 24, 40, 0.12);
+  --shadow-popup: 0 20px 40px -8px rgba(0, 0, 0, 0.18);
+
+  --chart-grid: rgba(228, 231, 235, 0.7);
+  --chart-tooltip-bg: #1A1D23;
+  --chart-tooltip-text: #FFFFFF;
+}
+
+/* Dark Mode */
+:root[data-theme="dark"] {
+  --bg-primary: #0F1115;
+  --bg-secondary: #171A21;
+  --bg-elevated: #1E212B;
+  --bg-hover: #262B37;
+  --border-color: #2A2E38;
+  --border-subtle: #22252E;
+
+  --text-primary: #F2F3F5;
+  --text-secondary: #A7ADBA;
+  --text-muted: #6B7280;
+
+  --accent-primary: #3B82F6;
+  --accent-primary-hover: #60A5FA;
+  --accent-primary-subtle: rgba(59, 130, 246, 0.15);
+  --accent-secondary: #14B8A6;
+
+  --status-success: #22C55E;
+  --status-success-bg: rgba(34, 197, 94, 0.16);
+  --status-success-border: rgba(34, 197, 94, 0.3);
+
+  --status-warning: #F59E0B;
+  --status-warning-bg: rgba(245, 158, 11, 0.16);
+  --status-warning-border: rgba(245, 158, 11, 0.3);
+
+  --status-danger: #EF4444;
+  --status-danger-bg: rgba(239, 68, 68, 0.16);
+  --status-danger-border: rgba(239, 68, 68, 0.3);
+
+  --status-neutral: #9CA3AF;
+  --status-neutral-bg: rgba(156, 163, 175, 0.14);
+  --status-neutral-border: rgba(156, 163, 175, 0.25);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.6);
+  --shadow-popup: 0 24px 48px -10px rgba(0, 0, 0, 0.7);
+
+  --chart-grid: rgba(42, 46, 56, 0.8);
+  --chart-tooltip-bg: #262B37;
+  --chart-tooltip-text: #F2F3F5;
+}
