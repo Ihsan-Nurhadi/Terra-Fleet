@@ -1,0 +1,13 @@
+services:
+  fleet-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: terra_fleet_monitoring
+    restart: unless-stopped
+    ports:
+      # Format: HOST_PORT:CONTAINER_PORT
+      # Ubah 8080 menjadi 80 jika ingin langsung diakses via port HTTP standar
+      - "3000"
+    environment:
+      - TZ=Asia/Jakarta
